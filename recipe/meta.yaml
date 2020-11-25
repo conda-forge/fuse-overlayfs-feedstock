@@ -9,7 +9,6 @@ source:
     sha256: 91e78a93aac7698c65083deea04952bc86af6abbb0830785ef1dd4a8707ad8bf
     patches:
       - 0001-Add-missing-defines-for-CentOS-6.patch
-      - 0002-Fix-version-tag.patch
 
 build:
   number: 0

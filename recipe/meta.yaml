@@ -1,4 +1,4 @@
-{% set version = "1.3.0" %}
+{% set version = "1.7" %}
 
 package:
   name: fuse-overlayfs
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://github.com/containers/fuse-overlayfs/archive/v{{ version }}.tar.gz
-    sha256: 91e78a93aac7698c65083deea04952bc86af6abbb0830785ef1dd4a8707ad8bf
+    sha256: e4d9a794d270e237a38e7ced95af95ad15268e0584eab981ed7c7b3758b95995
     patches:
       - 0001-Add-missing-defines-for-CentOS-6.patch
 

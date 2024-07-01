@@ -1,4 +1,6 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
+
+set -euxo pipefail
 
 # Check that version tag is up to date (got out of sync upstream).
 grep -m1 '^AC_INIT' configure.ac \

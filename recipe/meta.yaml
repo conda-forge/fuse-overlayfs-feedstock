@@ -1,4 +1,4 @@
-{% set version = "1.15" %}
+{% set version = "1.16" %}
 
 package:
   name: fuse-overlayfs
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://github.com/containers/fuse-overlayfs/archive/v{{ version }}.tar.gz
-    sha256: e4fbbdacbeffb560715e6c74c128aee07a7053a1fec78dc904bcc0a88e2efd67
+    sha256: 45968517603389ead067222d234bc8d8ed33e4b4f8ba16216bdd3e6aedcccea9
 
 build:
   number: 0
@@ -21,12 +21,7 @@ requirements:
     - make
     - pkg-config >=0.9.0
   host:
-    - libfuse >=3.2.1
-    - libfuse
-  run:
-    # We can remove this here once we depend on a libfuse version for which we
-    # know all builds carry a run_exports.
-    - {{ pin_compatible('libfuse', max_pin='x') }}
+    - libfuse3
 
 test:
   commands:

@@ -2,7 +2,7 @@
 
 package:
   name: fuse-overlayfs
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   - url: https://github.com/containers/fuse-overlayfs/archive/v{{ version }}.tar.gz

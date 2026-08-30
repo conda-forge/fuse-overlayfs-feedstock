@@ -1,4 +1,4 @@
-{% set version = "1.17" %}
+{% set version = "1.18" %}
 
 package:
   name: fuse-overlayfs
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://github.com/containers/fuse-overlayfs/archive/v{{ version }}.tar.gz
-    sha256: cefffecfbb001b2784f19af344f27eae07b31a4faa38d345b738af96b2bec59e
+    sha256: fdd1896c8de35a15eb14444d7880be81d635fcbbc4ad162d8bc3ccf5627aa8c7
 
 build:
   number: 0
